@@ -1,4 +1,4 @@
-### Homework3
+## Homework3
 
 下载bulid目录里的app-debug.apk
 
@@ -51,7 +51,7 @@ alphaAnimator.setDuration(500);
 alphaAnimator.setRepeatMode(ValueAnimator.REVERSE);
 ```
 
-#### TODO2:     将上面创建的其他 ObjectAnimator 都添加到 AnimatorSet 中
+#### TODO3:     将上面创建的其他 ObjectAnimator 都添加到 AnimatorSet 中
 
 ```
 animatorSet = new AnimatorSet();
@@ -94,26 +94,6 @@ pager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
 
 // TODO: ex3-2, 添加 TabLayout 支持 Tab
 tabLayout.setupWithViewPager(pager);
-```
-
-#### TODO3:   修改 fragment_placeholder，添加 loading 控件和列表视图控件
-
-```
-<com.airbnb.lottie.LottieAnimationView
-    android:id="@+id/animation_view"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    app:lottie_autoPlay="true"
-    app:lottie_loop="true"
-    app:lottie_rawRes="@raw/material_wave_loading" />
-
-<android.support.v7.widget.RecyclerView
-    android:id="@+id/rv_numbers"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
-    tools:listitem="@layout/list_item"/>
 ```
 
 ```
